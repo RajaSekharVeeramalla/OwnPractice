@@ -1,0 +1,62 @@
+package coreJAVA;
+
+import java.io.*;
+
+class MethodOverloadingAndOverRiding {
+ 
+    static int add(int a, int b)
+    {
+      return a * b;
+    }
+ 
+    static int add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+ 
+    public static void main(String args[])
+    {
+          System.out.println("add() with 2 parameters");
+        System.out.println(add(4, 6));
+       
+          System.out.println("add() with 3 parameters");
+        System.out.println(add(4, 6, 7));
+    }
+}
+
+/*  import java.io.*;
+ 
+class Animal {
+ 
+    void eat()
+    {
+        System.out.println("eat() method of base class");
+        System.out.println("eating.");
+    }
+}
+ 
+class Dog extends Animal {
+ 
+    void eat()
+    {
+        System.out.println("eat() method of derived class");
+        System.out.println("Dog is eating.");
+    }
+}
+ 
+class MethodOverloadingAndOverriding {
+ 
+    public static void main(String args[])
+    {
+        Dog d1 = new Dog();
+        Animal a1 = new Animal();
+ 
+        d1.eat();
+        a1.eat();
+ 
+        Animal animal = new Dog();
+        // eat() method of animal class is overridden by
+        // base class eat()
+        animal.eat();
+    }
+} */
